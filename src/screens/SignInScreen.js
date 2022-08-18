@@ -2,7 +2,6 @@ import {
     StyleSheet, 
     Text, 
     View, 
-    SafeAreaView,
     Image, 
     KeyboardAvoidingView,
     TouchableWithoutFeedback,
@@ -46,9 +45,21 @@ export default function SignInScreen({navigation}) {
           />
         </View>
         <View style={{padding: 8}}>
-          <InputAuthentication nameIcon="user" size={20} placeHolderText="Tên tài khoản" onChangeText = {onChangeTextUsername}/>
+          <InputAuthentication 
+            nameIcon="user" 
+            size={20} 
+            placeHolderText="Tên tài khoản" 
+            onChangeText = {onChangeTextUsername}
+          />
           <View style = {{height: 30}}/>
-          <InputAuthentication nameIcon="lock" size={20} placeHolderText="Mật khẩu" secureTextEntry={true} onChangeText = {onChangeTextPassword} isPassword={true}/>
+          <InputAuthentication 
+            nameIcon="lock" 
+            size={20} 
+            placeHolderText="Mật khẩu" 
+            secureTextEntry={true} 
+            onChangeText = {onChangeTextPassword} 
+            isPassword={true}
+          />
         </View>
         <TouchableOpacity 
           style={styles.signInButton}
