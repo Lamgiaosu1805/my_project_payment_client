@@ -2,7 +2,7 @@ import { Dimensions, StyleSheet, Text, TextInput, View, TouchableOpacity} from '
 import React, { useState } from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import PropTypes from 'prop-types';
-import Colors from '../../assets/resources/colors';
+import Colors from '../utils/colors';
 
 export default function InputAuthentication({nameIcon, size, placeHolderText, secureTextEntry, onChangeText, isPassword}) {
   InputAuthentication.prototype = {

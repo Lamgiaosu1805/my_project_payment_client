@@ -13,7 +13,7 @@ import {
 import React, { useState } from 'react'
 import InputAuthentication from '../components/InputAuthentication'
 import { StatusBar } from 'expo-status-bar'
-import Colors from '../../assets/resources/colors';
+import Colors from '../utils/colors';
 
 export default function SignInScreen({navigation}) {
   const [username, setUsername] = useState('');
