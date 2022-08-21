@@ -1,3 +1,3 @@
 # my_project_payment_client
-- npm install
+- run "yarn"
 - install expo package
